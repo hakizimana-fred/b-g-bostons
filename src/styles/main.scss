@@ -1,0 +1,296 @@
+@import "resets";
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Righteous|Roboto|Ubuntu&display=swap");
+$colors: (
+  mainDark: #333,
+  mainWhite: #fff,
+  green: green,
+);
+
+@function colors($color) {
+  @return map-get($colors, $color);
+}
+@mixin medium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin minMedixum {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin smallDevice {
+  @media screen and (max-width: 586px) {
+    @content;
+  }
+}
+h1 {
+  font-family: "Righteous" cursive;
+}
+body {
+  color: color(mainDark);
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+  font-family: "Open sans" sans-serif;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  z-index: 2;
+  .nav-link {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    color: #222;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s linear;
+
+    &:hover {
+      background: #f55c23;
+      color: #fff;
+    }
+    @include smallDevice {
+      padding: 10px;
+    }
+  }
+  .fabars-icon {
+    outline: none;
+    background: #ccc;
+  }
+}
+
+.showcase {
+  overflow: hidden;
+  background: url("../images/1.jpg") center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  height: 85vh;
+  .inner {
+    color: color(mainWhite);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .title-heading {
+      line-height: 1.2;
+      text-shadow: 0 0 6px rgba(51, 51, 51, 0.5);
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-family: "Lato" sans-serif;
+
+      @include smallDevice {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+.section-padding {
+  padding: 3rem 0;
+  @include smallDevice {
+    padding: 1rem 0;
+  }
+  .grid-container {
+    max-width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-row-gap: 2rem;
+
+    &.grid-container-medium2 {
+      @include minMedixum {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+      }
+    }
+  }
+  .section-title {
+    padding: 15rem 0.5rem;
+
+    @include smallDevice {
+      padding: 2rem 0.5rem;
+    }
+    &-name {
+      margin-top: 0;
+      margin-bottom: 25px;
+      color: #666;
+      font-size: 30px;
+      line-height: 1.2em;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+    }
+    &-features {
+      margin-bottom: 5px;
+      color: #81bc00;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+    }
+    &-underline {
+      background: #e3b505;
+      width: 5rem;
+      height: 0.25rem;
+    }
+    &-text {
+      letter-spacing: 0.1rem;
+      line-height: 1.5;
+      margin-top: 1rem;
+    }
+  }
+  .btn-learn {
+    margin-top: 1.3rem;
+    margin-left: 0;
+    border-color: #81bc00;
+    border-radius: 3px;
+    color: #81bc00;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    &:hover {
+      background: #81bc00;
+      color: #fff;
+    }
+  }
+}
+
+.about-container {
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2rem;
+
+  @include minMedixum {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .about-img {
+    overflow: hidden;
+    transition: all 1s linear;
+    position: relative;
+
+    @include smallDevice {
+      order: -1;
+    }
+    &:hover .about-img-item {
+      transform: scale(0.8);
+    }
+    @include minMedixum {
+      &.about-img-special {
+        order: 1;
+      }
+    }
+    &-item {
+      width: 100%;
+      display: block;
+      height: auto;
+      border-radius: 0.25rem;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+.single {
+  background-color: #00729c;
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    #2b87b0,
+    #006ea0
+  );
+  color: #fff;
+
+  .para {
+    font-family: "Ubuntu";
+    color: whitesmoke;
+    line-height: 1.6;
+    @include smallDevice {
+      width: 100%;
+      padding-left: 3rem;
+    }
+  }
+}
+
+.petshowcase {
+  position: relative;
+  overflow: hidden;
+  background: url("../images/green.jpeg") center/cover fixed no-repeat;
+  margin-top: 2rem;
+  padding-top: 15rem;
+  padding-bottom: 0;
+  height: 60vh;
+
+  .module-content {
+    color: #666;
+    font-style: normal;
+    font-weight: 300;
+    position: relative;
+    margin-top: -12rem;
+    &-left {
+      max-width: 420px;
+      margin-right: auto;
+      margin-left: 0;
+      padding: 115px 0 115px 75px;
+      text-align: left;
+      background: #fff;
+    }
+    .float-block {
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 50px;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  background: #3f3f3f;
+  color: #d5d5d5;
+  margin-top: 3rem;
+  position: relative;
+
+  .footer-links {
+    color: #fff !important;
+    text-decoration: none;
+    margin-bottom: 5rem;
+    transition: all 1s linear;
+    cursor: pointer;
+    &:hover {
+      color: #81bc00;
+    }
+  }
+
+  h5 {
+    margin-bottom: 2rem;
+    color: #81bc00;
+    padding: 0 0 0.7rem;
+    font-weight: 600;
+  }
+}
+.services-icon {
+  font-size: 3rem;
+  color: #e3b505;
+}
+.social-icons {
+  font-size: 2rem;
+  transition: all 1s linear;
+
+  &:hover {
+    color: #81bc00;
+  }
+}
+.contact-icons {
+  font-size: 1.5rem;
+  color: #f55c23;
+}
