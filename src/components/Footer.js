@@ -33,8 +33,10 @@ export const Footer = () => {
             <h5>Follow us</h5>
 
             <div className="d-flex justify-content-around">
-              <span className="social-icons">
+              <span >
+               <a href="https://www.facebook.com/B-and-G-Bostons-109623097159324" className="social-icons">
                 <FaFacebook />
+                </a>
               </span>
               <span className="social-icons">
                 <FaTwitter />

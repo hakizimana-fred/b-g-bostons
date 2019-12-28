@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
-import pet from "../images/girl.jpeg"
+import pet from "../images/1.jpg"
 export const Description = () => {
   return (
     <section className="py-5 description">
@@ -11,11 +11,9 @@ export const Description = () => {
               About B&G Bostons
             </h1>
             <p className="text-muted w-75 py-5">
-              We're on a mission to improve the lives of pets by empowering the
-              people who love them. By combining pet science and technology, our
-              products help you care for your pet in ways not previously
-              possible. Our top-rated wearables help every pet parent better
-              understand their pet's needs, behaviors and well-being.
+             B and G Bostons is about raising and selling quality
+             Boston Terriers. We only have a few litters a year so 
+             we can devote our time to each puppies indivividual needs.
             </p>
           </Col>
           <Col className="col-back col-md-6">
