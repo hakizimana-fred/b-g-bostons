@@ -10,14 +10,14 @@ import "../styles/main.scss"
 const IndexPage = () => {
   return (
     <React.Fragment>
-      {/* <Layout>
+      <Layout>
         <ShowCase />
         <Description />
         <Children />
         <SingleSection />
         <PetShowCase />
-      </Layout> */}
-      <h1>Site under Construction. See you soon.</h1>
+      </Layout>
+    
     </React.Fragment>
   )
 }

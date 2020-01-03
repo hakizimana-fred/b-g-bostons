@@ -6,11 +6,10 @@ export const PetShowCase = () => {
       <div className="module-content module-content-left">
         <div className="floating-block">
           <h2 className="heading section-title section-title-small">
-            Dog Walking
+            About us
           </h2>
           <p className="headline-paragraph text-green">
-            At B&G we do take care of the dogs we walk them, bathe them and baby
-            sit them.
+          B and G Bostons is about raising and selling quality Boston Terriers. We only have a few litters a year so we can devote our time to each puppies indivividual needs.
           </p>
         </div>
       </div>

@@ -9,20 +9,13 @@ export const Children = () => {
       <div className="grid-container grid-container-medium2">
         <article className="about-container">
           <div className="about-img ">
-            <img
-              src={pet}
-              className="about-img-item img-responsive"
-              alt="about"
-            />
+          <iframe width="680" height="383" src="http://www.youtube.com/embed/iWR9gwxW-4k?rel=0" frameborder="0" allowfullscreen></iframe>
           </div>
           <div className="section-title">
-            <h3 className="section-title-name text-center">Track Location</h3>
-            <h5 className="section-title-features">Get alerts</h5>
+            <h3 className="section-title-name text-center">MORE ABOUT THIS BREED</h3>
+            <h5 className="section-title-features">Know your pets</h5>
             <p className="section-title-text text-muted">
-              Get notified by email, text, or app when your pet leaves a
-              designated safe place–whether it’s with the dogwalker or a sneaky
-              side-door escape. Quickly locate them with real-time GPS tracking
-              using AT&T nationwide network and Google Maps.
+            Boston Terriers are known for being very intelligent — sometimes too much so. Their lively, affectionate nature makes them extremely loveable, though their sometimes stubborn nature or spurts of hyperactivity can land them in hot water with their owners. Any angst about their behavior, however, soon melts when they look up at you with those huge, round eyes that seem to say "I love you."
             </p>
             <Link className="btn-learn btn btn-block" to="/blog">
               Learn more
@@ -32,13 +25,10 @@ export const Children = () => {
 
         <article className="about-container">
           <div className="section-title">
-            <h1 className="section-title-name">KEEP YOUR PET IN PEAK SHAPE</h1>
-            <h5 className="section-title-features">Have your pet in shape</h5>
+            <h1 className="section-title-name">ABOUT BOSTON TERRIER</h1>
+            <h5 className="section-title-features">Know your pets</h5>
             <p className="section-title-text text-muted">
-              Improve your pet’s life by setting realistic fitness goals based
-              on breed, age and weight. Track calories burned, distance
-              traveled, minutes active and more. Just be sure to stop and
-              celebrate with achievement badges awarded for milestones!
+            The Boston Terrier is a lively, highly intelligent, smooth coated, short-headed, compactly built, short-tailed, well balanced dog, brindle, seal or black in color and evenly marked with white. The head is in proportion to the size of the dog and the expression indicates a high degree of intelligence
             </p>
             <Link className="btn-learn btn btn-block" to="/blog">
               Learn more
